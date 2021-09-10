@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daae274d-7ea8-434c-b75e-71f01e130e9a" name="Changes" comment="" />
+    <list default="true" id="daae274d-7ea8-434c-b75e-71f01e130e9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/method_not_allowed_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/middleware_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/not_found_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/panic_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/params_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/resources/goodbye.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/resources/hello.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/router_pattern_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/router_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-httprouter/serve_file_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/.idea/golang-json.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/customer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/decode_json_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/decoder_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/encode_json_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/encoder_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/json_array_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/json_object_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/json_tag_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/golang-json/map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/golang-httprouter/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/golang-httprouter/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
