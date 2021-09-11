@@ -13,24 +13,21 @@ type CategoryControllerImpl struct {
 	CategoryService service.CategoryService
 }
 
-func NewCategoryController(categoryService service.CategoryService) CategoryController  {
-
+func NewCategoryController(categoryService service.CategoryService) CategoryController {
 	return &CategoryControllerImpl{
 		CategoryService: categoryService,
 	}
-
 }
 
 func (controller *CategoryControllerImpl) Create(writer http.ResponseWriter, request *http.Request, params httprouter.Params) {
 	categoryCreateRequest := web.CategoryCreateRequest{}
-
 	helper.ReadFromRequestBody(request, &categoryCreateRequest)
 
 	categoryResponse := controller.CategoryService.Create(request.Context(), categoryCreateRequest)
 	webResponse := web.WebResponse{
-		Code : 200,
+		Code:   200,
 		Status: "OK",
-		Data: categoryResponse,
+		Data:   categoryResponse,
 	}
 
 	helper.WriteToResponseBody(writer, webResponse)
@@ -48,9 +45,9 @@ func (controller *CategoryControllerImpl) Update(writer http.ResponseWriter, req
 
 	categoryResponse := controller.CategoryService.Update(request.Context(), categoryUpdateRequest)
 	webResponse := web.WebResponse{
-		Code : 200,
+		Code:   200,
 		Status: "OK",
-		Data: categoryResponse,
+		Data:   categoryResponse,
 	}
 
 	helper.WriteToResponseBody(writer, webResponse)
@@ -63,7 +60,7 @@ func (controller *CategoryControllerImpl) Delete(writer http.ResponseWriter, req
 
 	controller.CategoryService.Delete(request.Context(), id)
 	webResponse := web.WebResponse{
-		Code : 200,
+		Code:   200,
 		Status: "OK",
 	}
 
@@ -77,9 +74,9 @@ func (controller *CategoryControllerImpl) FindById(writer http.ResponseWriter, r
 
 	categoryResponse := controller.CategoryService.FindById(request.Context(), id)
 	webResponse := web.WebResponse{
-		Code : 200,
+		Code:   200,
 		Status: "OK",
-		Data: categoryResponse,
+		Data:   categoryResponse,
 	}
 
 	helper.WriteToResponseBody(writer, webResponse)
@@ -88,9 +85,9 @@ func (controller *CategoryControllerImpl) FindById(writer http.ResponseWriter, r
 func (controller *CategoryControllerImpl) FindAll(writer http.ResponseWriter, request *http.Request, params httprouter.Params) {
 	categoryResponses := controller.CategoryService.FindAll(request.Context())
 	webResponse := web.WebResponse{
-		Code : 200,
+		Code:   200,
 		Status: "OK",
-		Data: categoryResponses,
+		Data:   categoryResponses,
 	}
 
 	helper.WriteToResponseBody(writer, webResponse)
