@@ -28,7 +28,7 @@ func validationErrors(writer http.ResponseWriter, request *http.Request, err int
 
 		webResponse := web.WebResponse{
 			Code: http.StatusBadRequest,
-			Status: "Bad Request",
+			Status: "BAD REQUEST",
 			Data: exception.Error(),
 		}
 
@@ -64,7 +64,7 @@ func internalServerError(writer http.ResponseWriter, request *http.Request, err 
 
 	webResponse := web.WebResponse{
 		Code: http.StatusInternalServerError,
-		Status: "Internal Server Error",
+		Status: "INTERNAL SERVER ERROR",
 		Data: err,
 	}
 
