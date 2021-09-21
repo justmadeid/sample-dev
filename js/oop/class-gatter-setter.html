@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    class Person {
+        constructor(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        get fullName(){
+            return `${this.firstName} ${this.lastName}`;
+        }
+
+        set fullName(value){
+            const result = value.split(" ");
+            this.firstName = result[0];
+            this.lastName = result[1];
+        }
+    }
+
+    const made = new Person("Made","Garda");
+    console.info(made);
+    console.info(made.fullName);
+
+    made.fullName = "made sanskara";
+    console.info(made)
+
+  </script>
+</body>
+</html>

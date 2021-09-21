@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Employee {
+
+            constructor(firstName) {
+                this.firstName = firstName;
+            }
+
+            sayHello(name) {
+                console.info(`hello ${name}, my name is employee  ${this.firstName}`);
+            }
+        }
+
+        class Manager extends Employee {
+
+            constructor(firstName, lastName) {
+                super(firstName);
+                this.lastName = lastName
+            }
+
+            sayHello(name) {
+                console.info(`hello ${name}, my name is manager ${this.firstName} ${this.lastName}`);
+            }
+        }
+
+        const employee = new Employee("mantap");
+        employee.sayHello("soul");
+
+        const manager = new Manager("garda", "sanskara");
+        manager.sayHello("sebastian");
+
+        console.info(manager);
+        console.info(employee);
+        
+    </script>
+</body>
+</html>

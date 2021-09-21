@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Shape {
+            paint(){
+                console.info("everything");
+            }
+        }
+
+        class Circle extends  Shape{
+            paint(){
+                super.paint();
+                console.info("pain sircle")
+            }
+        }
+
+        const circle = new Circle();
+        circle.paint()
+
+    </script>
+</body>
+</html>

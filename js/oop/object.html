@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        function Person() {
+            this.firstName = "";
+            this.lastName = "";
+            this.sayHello = function (name) {
+                console.info(`hello ${name}, my name is ${this.firstName} ${this.lastName}`)
+            }
+        }
+
+        const garda = new Person();
+        garda.firstName = "made";
+        garda.lastName = "garda";
+        garda.sayHello("setiawan")
+
+
+        const sanskara = new Person();
+        sanskara.firstName = "made";
+        sanskara.lastName = "sankara";
+        sanskara.sayHello("agastya")
+
+        console.log(garda);
+        console.log(sanskara);
+
+
+        //parameter
+        // function Person(firstName, lastName) {
+        //     this.firstName = firstName
+        //     this.lastName = lastName
+        //     this.sayHello = function (name) {
+        //         console.info(`heloo ${name}, my name is ${firstName} ${lastName}`)
+        //     }
+        // }
+
+        // const made = new Person("o", "mantap");
+        // made.sayHello("test")
+        //
+        // const garda = new Person("garda", "setiawan");
+        // garda.sayHello("made")
+
+
+    </script>
+</body>
+</html>

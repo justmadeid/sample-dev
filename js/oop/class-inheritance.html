@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Employee {
+            sayHello(name) {
+                console.info(`hello ${name}, my name is employee  ${this.name}`);
+            }
+        }
+
+        class Manager extends Employee {
+            sayHello(name) {
+                console.info(`hello ${name}, my name is manager ${this.name}`);
+            }
+        }
+
+        const employee = new Employee();
+        employee.name = "mantap";
+        employee.sayHello("soul");
+
+        const manager = new Manager();
+        manager.name = "Garda";
+        manager.sayHello("sebastian");
+
+        console.info(manager);
+        console.info(employee);
+        
+    </script>
+</body>
+</html>

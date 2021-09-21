@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="module">
+
+  import * as garda from "./scripts/module-object.js";
+
+  console.info(garda.firstName);
+  console.info(garda.middleName);
+  console.info(garda.lastName);
+
+  garda.hello();
+
+  const person = new garda.Person();
+
+</script>
+</body>
+</html>

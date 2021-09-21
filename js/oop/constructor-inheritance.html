@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function Employee(firstName) {
+            this.firstName = firstName;
+            this.sayHello = function (name) {
+                console.info(`hello ${name}, my name is ${this.firstName}`)
+            }
+        }
+        
+        function Manager(firstName, lastName) {
+            this.lastName = lastName
+            Employee.call(this, firstName)
+        }
+
+        const manager = new Manager("Garda","setiawan");
+        manager.sayHello("sebastian")
+        console.info(manager);
+        
+    </script>
+</body>
+</html>

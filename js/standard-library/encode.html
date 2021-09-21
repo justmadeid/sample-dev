@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    {
+      //encode
+        const url =  "http://contoh.com/?name=made garda setiawan";
+        console.info(url);
+
+        const encoded = encodeURI(url);
+        console.info(encoded);
+
+        const decoded = decodeURI(url);
+        console.info(decoded);
+    }
+    {
+        // encode uri dan decode uri
+
+        const value = "Made&Garda=Setiawan";
+        const url = "http://contoh.com/?name=";
+        console.info(url + value)
+
+        const encoded = encodeURIComponent(value);
+        console.info(url + encoded);
+
+        const decoded = decodeURIComponent(encoded);
+        console.info(url + decoded);
+
+    }
+  </script>
+</body>
+</html>
