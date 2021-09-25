@@ -1,0 +1,30 @@
+{
+    "name": "jstmadeid/php-composer",
+    "description": "php composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "I Made .G Agastya Sanskara",
+            "email": "magase@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jstmade\\" : "src"
+        }
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/justmadeid/composer-libsimple"
+    }
+    ],
+    "require": {
+        "php" : ">=8.0",
+        "jstmade/composer-lib" : "2.0.*",
+        "monolog/monolog" : "2.2.0"
+    },
+    "scripts": {
+        "jst-serve" : "php -S localhost:8080",
+        "hello" : "echo 'hello world'"
+    }
+}
