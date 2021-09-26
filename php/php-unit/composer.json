@@ -1,0 +1,32 @@
+{
+    "name": "jstmade/php-unit",
+    "description": "simple test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "I Made .G Agastya Sanskara",
+            "email": "magase@outlook.com"
+        }
+    ],
+    "require": {
+        "php" : ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jstmade\\Test\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jstmade\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test" : "phpunit --configuration phpunit.xml",
+        "test:product" : "phpunit --configuration phpunit.xml --testsuite product",
+        "test:counter" : "phpunit --configuration phpunit.xml --testsuite counter"
+    }
+}
